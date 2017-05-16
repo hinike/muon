@@ -8,6 +8,11 @@ binding.registerCustomHook(function (bindingsAPI, extensionId) {
     var nothing = []
     cb(nothing)
   })
+
+  apiFunctions.setHandleRequest('set', function (details, cb) {
+    var noncookie = null
+    cb(noncookie)
+  })
 })
 
 exports.$set('binding', binding.generate())
